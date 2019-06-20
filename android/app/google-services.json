@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "69960934873",
+    "firebase_url": "https://finalproject-b0a5c.firebaseio.com",
+    "project_id": "finalproject-b0a5c",
+    "storage_bucket": "finalproject-b0a5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69960934873:android:23af97cfa7c14e29",
+        "android_client_info": {
+          "package_name": "ece.ryan.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69960934873-k11ck001cqeqm3spmftu5ufjevihgmre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMcAErfTu3z9OWzzb21YaVLRLKtWurFEo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

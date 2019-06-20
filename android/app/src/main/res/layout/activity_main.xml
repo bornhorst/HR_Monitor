@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+
+
+
+    <!--  Beat Indicator -->
+    <ImageView
+        android:id="@+id/heartImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <!--  Real Time BPM Label -->
+    <TextView
+        android:id="@+id/labelBPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="BPM:"
+        android:textColor="@color/textWhite"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/heartImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.3"/>
+
+    <!--  Real Time BPM -->
+    <TextView
+        android:id="@+id/currentBPM"
+        android:text="90"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textWhite"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="@id/labelBPM"
+        app:layout_constraintBottom_toBottomOf="@id/labelBPM"
+        app:layout_constraintLeft_toRightOf="@id/labelBPM"/>
+
+
+    <!--  Max Heart Rate Label -->
+    <TextView
+        android:id="@+id/labelMaxBPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="MAX"
+        android:textColor="@color/textWhite"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/heartImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/labelMinBPM"/>
+
+    <!--  Max Heart Rate -->
+    <TextView
+        android:id="@+id/maxBPM"
+        android:text="90"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textWhite"
+        app:layout_constraintTop_toBottomOf="@id/labelMaxBPM"
+        app:layout_constraintLeft_toLeftOf="@id/labelMaxBPM"
+        app:layout_constraintRight_toRightOf="@id/labelMaxBPM" />
+
+    <!--  Min Heart Rate Label -->
+    <TextView
+        android:id="@+id/labelMinBPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="MIN"
+        android:textColor="@color/textWhite"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/heartImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/labelMaxBPM"/>
+
+    <!--  Min Heart Rate -->
+    <TextView
+        android:id="@+id/minBPM"
+        android:text="90"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textWhite"
+        app:layout_constraintTop_toBottomOf="@id/labelMinBPM"
+        app:layout_constraintLeft_toLeftOf="@id/labelMinBPM"
+        app:layout_constraintRight_toRightOf="@id/labelMinBPM"
+         />
+
+</android.support.constraint.ConstraintLayout>
